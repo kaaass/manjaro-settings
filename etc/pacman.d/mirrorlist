@@ -1,0 +1,15 @@
+##
+## Manjaro Linux custom mirrorlist
+## Generated on 2020-03-15 20:55
+##
+## Please use 'pacman-mirrors -id' To reset custom mirrorlist
+## Please use 'pacman-mirrors -c all' To reset custom mirrorlist
+## To remove custom config run  'pacman-mirrors -c all'
+##
+
+## Country : China
+Server = https://mirrors.tuna.tsinghua.edu.cn/manjaro/stable/$repo/$arch
+
+## Country : China
+Server = https://mirrors.sjtug.sjtu.edu.cn/manjaro/stable/$repo/$arch
+

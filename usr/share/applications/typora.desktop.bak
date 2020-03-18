@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Typora
+GenericName=Markdown Editor
+Exec=typora %U --force-device-scale-factor=1.3
+Icon=typora
+Type=Application
+StartupNotify=true
+Categories=Office;WordProcessor;
+MimeType=text/markdown;text/x-markdown;
+

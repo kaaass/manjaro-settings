@@ -1,0 +1,8 @@
+[Trigger]
+Operation = Install
+Type = Package
+Target = typora
+
+[Action]
+When = PostTransaction
+Exec = /bin/sh -c 'cp /usr/share/applications/typora.desktop.bak /usr/share/applications/typora.desktop && desktop-file-validate /usr/share/applications/typora.desktop'
