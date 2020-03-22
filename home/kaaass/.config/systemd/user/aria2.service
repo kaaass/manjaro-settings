@@ -1,0 +1,14 @@
+[Unit]
+Description=Aria2 Downloader
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/aria2c --conf-path=/home/kaaass/.config/aria2/aria2.conf
+Restart=on-abnormal
+RestartSec=5s
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target
