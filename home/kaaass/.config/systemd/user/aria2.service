@@ -1,12 +1,13 @@
 [Unit]
 Description=Aria2 Downloader
-After=network.target
+After=dhcpcd.service
 Wants=network.target
 
 [Service]
 Type=simple
 ExecStart=/usr/bin/aria2c --conf-path=/home/kaaass/.config/aria2/aria2.conf
-Restart=on-abnormal
+ExecReload=/usr/bin/kill -HUP $MAINPID
+Restart=on-failure
 RestartSec=5s
 KillMode=mixed
 
